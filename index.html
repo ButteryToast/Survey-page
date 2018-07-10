@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FCC Survey</title>
+    <meta charset="utf-8" />
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    <h1 id="title">Test Survey</h1>
+    <div id="upper-form">
+      <p id="description">A survey project for Free Code Camp.</p>
+      <form id="survey-form" method="GET">
+          <div class="row">
+            <div class="label">
+              <label id="name-label" for="name">* Name: </label>
+            </div>
+            <div class="right-tab">
+              <input class="input-field" type="text" name="name" id="name" autofocus required placeholder="Enter your name"/>
+            </div>            
+          </div>
+          <div class="row">
+            <div class="label">
+                <label id="email-label" for="email">* Email: </label>
+            </div>
+            <div class="right-tab">
+                <input class="input-field" id="email" name="email" type="email" required placeholder="Enter your email"/>
+            </div>          
+          </div>
+          <div class="row">
+            <div class="label">
+                <label id="number-label" for="age">Age</label>
+            </div>
+            <div class="right-tab">
+                <input class="input-field" id="number" type="number" name="age" min="1" max="100" placeholder="Enter your age"/>
+            </div>
+            
+          </div>
+          <div class="row">
+            <div class="label">
+                <label id="selection-label" for="current-position">How would you describe your current role?</label>
+            </div>
+            <div class="right-tab">
+                <select name="current-position" id="dropdown">
+                    <option disabled value>Select an option</option>
+                    <option value="student">Student</option>
+                    <option value="full-time">Employed Full Time</option>
+                    <option value="part-time">Employed Part Time</option>
+                    <option value="unemployed">Unemployed</option>
+                    <option value="other">Other</option>
+                    <option value="prefer-no">Prefer not to say</option>
+                  </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="label">
+                <label id="rating" for="user-rating">* How likely would you be to recommend our services to a friend?</label>
+            </div>
+            <div class="right-tab">
+                <ul style="list-style: none;">
+                    <li class="radio"><label>Very Likely<input type="radio" name="user-rating" value="1" /></label></li>
+                    <li class="radio"><label>Maybe<input type="radio" name="user-rating" value="2" /></label></li>
+                    <li class="radio"><label>Not Likely<input type="radio" name="user-rating" value="3" /></label></li>
+                  </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="label">
+                <label id="check-label" for="interests">Select all items that interest you:</label>
+            </div>
+            <div class="right-tab">
+                <ul id="preferences" style="list-style: none;">
+                    <li class="checkbox"><label><input name="interests" value="1" type="checkbox" />Front-End</label></li>
+                    <li class="checkbox"><label><input name="interests" value="2" type="checkbox" />Back-End</label></li>
+                    <li class="checkbox"><label><input name="interests" value="3" type="checkbox" />Data Visualization</label></li>
+                    <li class="checkbox"><label><input name="interests" value="4" type="checkbox" />Web Design</label></li>
+                    <li class="checkbox"><label><input name="interests" value="5" type="checkbox" />Game Development<label></li>
+                  </ul>
+            </div>
+              
+          </div>
+          <div class="row">
+            <div class="label">
+                <label for="comment">Please leave any comments or suggestions you might have for us here.</label>
+            </div>
+            <div class="right-tab">
+                <textarea id="comments" name="comment"></textarea>
+            </div>          
+          </div>
+          <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
